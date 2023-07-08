@@ -1,3 +1,6 @@
+//the basice randomness comes from random function(0,1)
+//convert that into (0, 3) would do it by times 3; that's it and then round it up
+
 function getComputerChoice() {
     let arr = ['Rock', 'Paper','Scissors'];
     return arr[Math.floor(Math.random() * arr.length)];
