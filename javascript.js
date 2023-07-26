@@ -40,6 +40,7 @@ console.log(computerSlection);
 console.log(playRound(playerSelection,computerSlection));
 */
 
+/*
 function game() {
     let playerScore = 0;
     let computerScore = 0;
@@ -64,5 +65,18 @@ function game() {
     }
 
 }
+*/
+//below is step number 2 on revisiting rock paper scissors
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        let playerSelection = button.textContent;
+        let computerSlection = getComputerChoice();
+        console.log(computerSlection);
+        let res = playRound(playerSelection,computerSlection);
+        console.log(res);
+    })
+});
 
-console.log(game());
+
+//console.log();
