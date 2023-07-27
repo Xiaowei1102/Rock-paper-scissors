@@ -72,9 +72,12 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         let playerSelection = button.textContent;
         let computerSlection = getComputerChoice();
-        console.log(computerSlection);
+        //console.log(computerSlection);
         let res = playRound(playerSelection,computerSlection);
-        console.log(res);
+        //console.log(res);
+        const div = document.createElement('div');
+        div.textContent = res;
+        document.body.appendChild(div);
     })
 });
 
